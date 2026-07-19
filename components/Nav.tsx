@@ -18,8 +18,12 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 h-16 border-b border-hairline bg-canvas/80 backdrop-blur">
       <div className="mx-auto flex h-full max-w-content items-center justify-between px-6">
-        <Link href="/" className="font-sans text-title-md font-semibold text-primary">
-          Caleb Stephen
+        <Link
+          href="/"
+          aria-label="Home"
+          className="flex h-[34px] w-[34px] items-center justify-center rounded-md border border-hairline-strong font-mono text-caption font-semibold text-body-strong"
+        >
+          CS
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

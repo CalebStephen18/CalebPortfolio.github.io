@@ -9,13 +9,14 @@ export default function Hero() {
         <p className="font-mono text-caption-uppercase text-primary-glow">Senior AI/ML Engineer</p>
 
         <h1 className="mx-auto mt-4 max-w-3xl text-display-sm text-ink sm:text-display-lg md:text-display-mega">
-          Building agentic AI systems that are actually load-bearing.
+          Hi, I&apos;m Caleb Stephen.
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-body-md text-body">
-          I lead engineering on kAInet, Express Analytics&apos; agentic marketing platform —
-          architecture, LangGraph multi-agent orchestration, and evaluation for systems businesses
-          actually depend on. Not demos.
+          I build agentic AI systems that are actually load-bearing — I lead engineering on
+          kAInet, Express Analytics&apos; agentic marketing platform — architecture, LangGraph
+          multi-agent orchestration, and evaluation for systems businesses actually depend on.
+          Not demos.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
