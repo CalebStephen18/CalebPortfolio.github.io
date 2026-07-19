@@ -1,13 +1,15 @@
 import { stats } from "@/lib/data";
+import SectionHeading from "./SectionHeading";
+import { Reveal, Stagger, StaggerItem } from "./Motion";
 
 export default function About() {
   return (
     <section id="about" className="border-t border-hairline px-6 py-section">
       <div className="mx-auto max-w-content">
-        <p className="font-mono text-caption-uppercase text-primary-glow">About</p>
+        <SectionHeading title="About" subtitle="A quick introduction" />
 
-        <div className="mt-6 grid gap-12 lg:grid-cols-[1.2fr,1fr]">
-          <div className="space-y-5 text-body-md text-body">
+        <div className="mt-12 grid gap-12 lg:grid-cols-[1.2fr,1fr]">
+          <Reveal className="space-y-5 text-body-md text-body">
             <p>
               I build agentic AI systems that are actually load-bearing — not chatbots wrapped
               in a demo. As Senior AI/ML Engineer at Express Analytics, I lead a team of engineers
@@ -24,18 +26,17 @@ export default function About() {
               systems — orchestration, tool design, evals, and the gap between agent demos and
               agents that hold up.
             </p>
-          </div>
+          </Reveal>
 
-          <div className="grid grid-cols-2 gap-4">
+          <Stagger className="grid grid-cols-2 gap-4 content-start">
             {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="flex items-center justify-center rounded-lg bg-surface-card px-4 py-6 text-center"
-              >
-                <span className="font-mono text-caption-uppercase text-body-strong">{stat.label}</span>
-              </div>
+              <StaggerItem key={stat.label} className="h-full">
+                <div className="flex h-full items-center justify-center rounded-lg bg-surface-card px-4 py-6 text-center transition-colors hover:bg-surface-card-elevated">
+                  <span className="font-mono text-caption-uppercase text-body-strong">{stat.label}</span>
+                </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </div>
     </section>
