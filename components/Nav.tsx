@@ -6,9 +6,9 @@ import { GithubIcon, LinkedInIcon } from "./icons";
 import { social } from "@/lib/data";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
+  { href: "/#about", label: "About" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#projects", label: "Projects" },
   { href: "/blog", label: "Writing" },
 ];
 
@@ -38,7 +38,7 @@ export default function Nav() {
             <LinkedInIcon className="h-5 w-5" />
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="rounded-md bg-primary px-[18px] py-[10px] text-button text-white transition-colors hover:bg-primary-active"
           >
             Get in touch
